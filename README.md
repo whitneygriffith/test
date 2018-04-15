@@ -75,7 +75,7 @@ To test if the bne instructions work.
 Will branch and continue to loop as long as $t0 != $t1, which has the value of 25.
 If successful, the program will end with register $t0 holding 25.
 ### ASM code of test case: bne ###
-```asm 
+```
 .data
 .text
 main:
@@ -223,7 +223,7 @@ CPI PERFORMANCE:
 ### Purpose of test case: jump ###
 To test the jump instruction. If jump is successful, the program will exit succesfully.
 ### ASM code of test case: jump ###
-```asm
+```
 .data
 .text
 main:
@@ -385,7 +385,7 @@ CPI PERFORMANCE:
 To test if the addi instructions work. If successful, it will also output 5, which is stored in register $t0.
 
 ### ASM code of test case: addi ###
-```asm
+```
 .data
 .text
 main:
@@ -556,7 +556,7 @@ CPI PERFORMANCE:
 ### Purpose of test case: lw_sw ###
 To test if the lw and sw instructions work. If successful, then it will store correctly the value read by lw from stack memory into another position in the stack memory.
 ### ASM code of test case: lw_sw ###
-```asm
+```
 .data
 .text
 main:
@@ -707,7 +707,7 @@ CPI PERFORMANCE:
 ### Purpose of test case: la ###
 To test if the la instruction works. If successful, it will correctly print the string "awesome" stored in data memory.
 ### ASM code of test case: la ###
-```asm
+```
 .data
 	name:	.asciiz "awesome"
 .text
@@ -858,7 +858,7 @@ CPI PERFORMANCE:
 ### Purpose of test case: hw3 ###
 This is a general test case that has most instructions of the simulators. If successful, it will terminate successfully since it uses jr to exit from main.
 ### ASM code of test case: hw3 ###
-```asm
+```
 .data
 .text
 fun:     # int fun(int s) { 
@@ -1059,7 +1059,7 @@ CPI PERFORMANCE:
 ### Purpose of test case: jal ###
 To test the jal and jr instructions for the single-cycle processor. If successful, it outputs the strings "we jumped to loop2" and "jal worked for god's sake", as well as the integers 11 and 11.
 ### ASM code of test case: jal ###
-```asm
+```
 .data
 	worked: .asciiz "jal worked for god's sake\n"
 	jumped: .asciiz "we jumped to loop2\n"
